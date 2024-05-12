@@ -9,11 +9,12 @@ class Finalwindows extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20, right: 20, bottom: 50),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Wrap(
-            spacing: 50,
-            runSpacing: 40,
-            children: <Widget>[
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
@@ -32,96 +33,102 @@ class Finalwindows extends StatelessWidget {
                   ),
                 ],
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
+              Wrap(
+                spacing: 50,
+                runSpacing: 40,
                 children: <Widget>[
-                  const Text(
-                    "About",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      const Text(
+                        "About",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                      ),
+                      25.height(),
+                      const Text(
+                        "How it works",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Featured",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Partnership",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Bussiness Relation",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      10.height(),
+                    ],
                   ),
-                  25.height(),
-                  const Text(
-                    "How it works",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      const Text(
+                        "Socials",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                      ),
+                      25.height(),
+                      const Text(
+                        "Discord",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Instagram",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Twitter",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Facebook",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      10.height(),
+                    ],
                   ),
-                  15.height(),
-                  const Text(
-                    "Featured",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Partnership",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Bussiness Relation",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  10.height(),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      const Text(
+                        "Community",
+                        style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+                      ),
+                      25.height(),
+                      const Text(
+                        "Events",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Blog",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Podcast",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      15.height(),
+                      const Text(
+                        "Invite a friend",
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
+                      ),
+                      10.height(),
+                    ],
+                  )
                 ],
               ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  const Text(
-                    "Socials",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                  25.height(),
-                  const Text(
-                    "Discord",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Instagram",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Twitter",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Facebook",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  10.height(),
-                ],
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  const Text(
-                    "Community",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                  25.height(),
-                  const Text(
-                    "Events",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Blog",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Podcast",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  15.height(),
-                  const Text(
-                    "Invite a friend",
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500, color: Color(0xff90A3BF)),
-                  ),
-                  10.height(),
-                ],
-              )
             ],
           ),
           25.height(),

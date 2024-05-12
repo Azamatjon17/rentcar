@@ -1,8 +1,7 @@
-import 'dart:ffi';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:morent/extentions.dart';
 
@@ -19,7 +18,7 @@ class Carphoto extends StatelessWidget {
           Container(
             height: heght,
             width: double.infinity,
-            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), image: const DecorationImage(image: AssetImage("assets/images/carmain.png"), fit: BoxFit.fitWidth)),
+            decoration: BoxDecoration(borderRadius: BorderRadius.circular(20), image: const DecorationImage(image: AssetImage("assets/images/carmain.png"), fit: BoxFit.contain)),
           ),
           20.height(),
           Row(
@@ -61,7 +60,7 @@ class Mobilecarabot extends StatelessWidget {
   }
 }
 
-class    Windowscarabot extends StatelessWidget {
+class Windowscarabot extends StatelessWidget {
   const Windowscarabot({super.key});
 
   @override
@@ -71,7 +70,7 @@ class    Windowscarabot extends StatelessWidget {
         children: <Widget>[
           Flexible(
               child: Carphoto(
-            heght: 232,
+            heght: 250,
           )),
           20.width(),
           const Flexible(child: AboutCar())
